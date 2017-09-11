@@ -1,0 +1,14 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "bg_infopart_pgc_night-736h@2x.jpg",
+      "subtype" : "736h",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
