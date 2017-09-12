@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "NEWSTabBarController.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+   
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    NEWSTabBarController * newsTab = [[NEWSTabBarController alloc] init];
+    self.window.rootViewController = newsTab;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

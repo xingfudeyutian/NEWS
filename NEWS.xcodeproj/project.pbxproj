@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B56747361F6789C5008BC8B2 /* NEWSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56747351F6789C5008BC8B2 /* NEWSTabBarController.m */; };
+		B567473D1F67B6D0008BC8B2 /* NEWSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B567473C1F67B6D0008BC8B2 /* NEWSMeViewController.m */; };
+		B56747401F67B6E5008BC8B2 /* NEWSMicroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B567473F1F67B6E5008BC8B2 /* NEWSMicroViewController.m */; };
+		B56747431F67B6F4008BC8B2 /* NEWSVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56747421F67B6F4008BC8B2 /* NEWSVideoViewController.m */; };
+		B56747461F67B704008BC8B2 /* NEWSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56747451F67B704008BC8B2 /* NEWSHomeViewController.m */; };
 		B59123E61F6278DC004EFFE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B59123E51F6278DC004EFFE8 /* main.m */; };
 		B59123E91F6278DC004EFFE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B59123E81F6278DC004EFFE8 /* AppDelegate.m */; };
-		B59123EC1F6278DC004EFFE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59123EB1F6278DC004EFFE8 /* ViewController.m */; };
 		B59123EF1F6278DC004EFFE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59123ED1F6278DC004EFFE8 /* Main.storyboard */; };
 		B59123F11F6278DC004EFFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59123F01F6278DC004EFFE8 /* Assets.xcassets */; };
 		B59123F41F6278DC004EFFE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59123F21F6278DC004EFFE8 /* LaunchScreen.storyboard */; };
@@ -35,12 +39,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B56747341F6789C5008BC8B2 /* NEWSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSTabBarController.h; sourceTree = "<group>"; };
+		B56747351F6789C5008BC8B2 /* NEWSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSTabBarController.m; sourceTree = "<group>"; };
+		B567473B1F67B6D0008BC8B2 /* NEWSMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSMeViewController.h; sourceTree = "<group>"; };
+		B567473C1F67B6D0008BC8B2 /* NEWSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSMeViewController.m; sourceTree = "<group>"; };
+		B567473E1F67B6E5008BC8B2 /* NEWSMicroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSMicroViewController.h; sourceTree = "<group>"; };
+		B567473F1F67B6E5008BC8B2 /* NEWSMicroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSMicroViewController.m; sourceTree = "<group>"; };
+		B56747411F67B6F4008BC8B2 /* NEWSVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSVideoViewController.h; sourceTree = "<group>"; };
+		B56747421F67B6F4008BC8B2 /* NEWSVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSVideoViewController.m; sourceTree = "<group>"; };
+		B56747441F67B704008BC8B2 /* NEWSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSHomeViewController.h; sourceTree = "<group>"; };
+		B56747451F67B704008BC8B2 /* NEWSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSHomeViewController.m; sourceTree = "<group>"; };
 		B59123E11F6278DC004EFFE8 /* 今日头条.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "今日头条.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59123E51F6278DC004EFFE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B59123E71F6278DC004EFFE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B59123E81F6278DC004EFFE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B59123EA1F6278DC004EFFE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B59123EB1F6278DC004EFFE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B59123EE1F6278DC004EFFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B59123F01F6278DC004EFFE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B59123F31F6278DC004EFFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +90,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B56747331F678994008BC8B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B56747341F6789C5008BC8B2 /* NEWSTabBarController.h */,
+				B56747351F6789C5008BC8B2 /* NEWSTabBarController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B56747371F67B6B0008BC8B2 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				B567473B1F67B6D0008BC8B2 /* NEWSMeViewController.h */,
+				B567473C1F67B6D0008BC8B2 /* NEWSMeViewController.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		B56747381F67B6B0008BC8B2 /* Micro */ = {
+			isa = PBXGroup;
+			children = (
+				B567473E1F67B6E5008BC8B2 /* NEWSMicroViewController.h */,
+				B567473F1F67B6E5008BC8B2 /* NEWSMicroViewController.m */,
+			);
+			path = Micro;
+			sourceTree = "<group>";
+		};
+		B56747391F67B6B0008BC8B2 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				B56747411F67B6F4008BC8B2 /* NEWSVideoViewController.h */,
+				B56747421F67B6F4008BC8B2 /* NEWSVideoViewController.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		B567473A1F67B6B0008BC8B2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B56747441F67B704008BC8B2 /* NEWSHomeViewController.h */,
+				B56747451F67B704008BC8B2 /* NEWSHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		B59123D81F6278DC004EFFE8 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +158,13 @@
 		B59123E31F6278DC004EFFE8 /* NEWS */ = {
 			isa = PBXGroup;
 			children = (
+				B56747331F678994008BC8B2 /* Common */,
+				B567473A1F67B6B0008BC8B2 /* Home */,
+				B56747391F67B6B0008BC8B2 /* Video */,
+				B56747381F67B6B0008BC8B2 /* Micro */,
+				B56747371F67B6B0008BC8B2 /* Me */,
 				B59123E71F6278DC004EFFE8 /* AppDelegate.h */,
 				B59123E81F6278DC004EFFE8 /* AppDelegate.m */,
-				B59123EA1F6278DC004EFFE8 /* ViewController.h */,
-				B59123EB1F6278DC004EFFE8 /* ViewController.m */,
 				B59123ED1F6278DC004EFFE8 /* Main.storyboard */,
 				B59123F01F6278DC004EFFE8 /* Assets.xcassets */,
 				B59123F21F6278DC004EFFE8 /* LaunchScreen.storyboard */,
@@ -202,6 +262,7 @@
 		B59123D91F6278DC004EFFE8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NEWS;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = hanyutong;
 				TargetAttributes = {
@@ -276,9 +337,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B59123EC1F6278DC004EFFE8 /* ViewController.m in Sources */,
 				B59123E91F6278DC004EFFE8 /* AppDelegate.m in Sources */,
+				B56747361F6789C5008BC8B2 /* NEWSTabBarController.m in Sources */,
+				B56747461F67B704008BC8B2 /* NEWSHomeViewController.m in Sources */,
+				B56747401F67B6E5008BC8B2 /* NEWSMicroViewController.m in Sources */,
 				B59123E61F6278DC004EFFE8 /* main.m in Sources */,
+				B567473D1F67B6D0008BC8B2 /* NEWSMeViewController.m in Sources */,
+				B56747431F67B6F4008BC8B2 /* NEWSVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 924VA47ZK6;
 				INFOPLIST_FILE = NEWS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -441,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 924VA47ZK6;
 				INFOPLIST_FILE = NEWS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
