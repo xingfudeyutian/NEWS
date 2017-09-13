@@ -7,6 +7,7 @@
 //
 
 #import "NEWSHomeViewController.h"
+#import "NEWSScrollTool.h"
 
 @interface NEWSHomeViewController ()
 
@@ -23,23 +24,25 @@
 
 - (void)setupSubViews
 {
-    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+ 
+    self.navigationController.navigationBar.translucent = NO;
+    NSString * name = [NSString stringWithFormat:@"search_background_%.f_logo",[UIScreen mainScreen].bounds.size.width];
+    UIImage * image = [UIImage imageNamed:name];
+    [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault ];
+
+    
+    NEWSScrollTool * scroll = [[NEWSScrollTool alloc] initWithFrame:CGRectMake(0, 0, 375, 44)];
+    [self.view addSubview:scroll];
+
+
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

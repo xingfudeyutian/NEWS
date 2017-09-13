@@ -16,7 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.title = @"微头条";
+    
+    UIButton * rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    [rightBtn setBackgroundImage:[UIImage imageNamed:@"addicon_title_dynamic"] forState:UIControlStateNormal];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 - (void)didReceiveMemoryWarning {

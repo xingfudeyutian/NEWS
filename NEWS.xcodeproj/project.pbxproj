@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51FA4ED1F6910BC00A49E37 /* NEWSScrollTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */; };
 		B56747361F6789C5008BC8B2 /* NEWSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56747351F6789C5008BC8B2 /* NEWSTabBarController.m */; };
 		B567473D1F67B6D0008BC8B2 /* NEWSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B567473C1F67B6D0008BC8B2 /* NEWSMeViewController.m */; };
 		B56747401F67B6E5008BC8B2 /* NEWSMicroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B567473F1F67B6E5008BC8B2 /* NEWSMicroViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B51FA4EB1F6910BC00A49E37 /* NEWSScrollTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSScrollTool.h; sourceTree = "<group>"; };
+		B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSScrollTool.m; sourceTree = "<group>"; };
 		B56747341F6789C5008BC8B2 /* NEWSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSTabBarController.h; sourceTree = "<group>"; };
 		B56747351F6789C5008BC8B2 /* NEWSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSTabBarController.m; sourceTree = "<group>"; };
 		B567473B1F67B6D0008BC8B2 /* NEWSMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSMeViewController.h; sourceTree = "<group>"; };
@@ -90,9 +93,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B51FA4EA1F69109A00A49E37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B51FA4EB1F6910BC00A49E37 /* NEWSScrollTool.h */,
+				B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B56747331F678994008BC8B2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B51FA4EA1F69109A00A49E37 /* View */,
 				B56747341F6789C5008BC8B2 /* NEWSTabBarController.h */,
 				B56747351F6789C5008BC8B2 /* NEWSTabBarController.m */,
 			);
@@ -342,6 +355,7 @@
 				B56747461F67B704008BC8B2 /* NEWSHomeViewController.m in Sources */,
 				B56747401F67B6E5008BC8B2 /* NEWSMicroViewController.m in Sources */,
 				B59123E61F6278DC004EFFE8 /* main.m in Sources */,
+				B51FA4ED1F6910BC00A49E37 /* NEWSScrollTool.m in Sources */,
 				B567473D1F67B6D0008BC8B2 /* NEWSMeViewController.m in Sources */,
 				B56747431F67B6F4008BC8B2 /* NEWSVideoViewController.m in Sources */,
 			);
