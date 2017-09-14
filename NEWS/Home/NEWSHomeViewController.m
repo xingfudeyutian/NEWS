@@ -26,14 +26,17 @@
     self.navigationController.navigationBar.translucent = NO;
     NSString * name = [NSString stringWithFormat:@"search_background_%.f_logo",[UIScreen mainScreen].bounds.size.width];
     UIImage * image = [UIImage imageNamed:name];
-    [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault ];
+    [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
  
-    NEWSScrollTool * scroll = [[NEWSScrollTool alloc] initWithFrame:CGRectMake(0, 100, MAINSCREEN_WIDTH, 80)];
-    scroll.backgroundColor = [UIColor yellowColor];
+    NEWSScrollTool * scroll = [[NEWSScrollTool alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, 30)];
     scroll.itemAry = @[@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技"];
     [self.view addSubview:scroll];
 
 }
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     

@@ -10,7 +10,6 @@
 
 @interface NEWSScrollTool : UIView
 
-
 @property (nonatomic, strong) NSArray * itemAry;
 
 
