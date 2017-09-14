@@ -20,7 +20,7 @@
 @implementation NEWSScrollTool
 
 
--(instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self)
@@ -35,16 +35,14 @@
 {
     UIScrollView * scrollView = [[UIScrollView alloc] init];
     self.scrollView = scrollView;
-    scrollView.alwaysBounceVertical = YES;
-    scrollView.alwaysBounceHorizontal = YES;
-    scrollView.showsVerticalScrollIndicator = YES;
-    scrollView.showsHorizontalScrollIndicator = YES;
-//    scrollView.backgroundColor = [UIColor greenColor];
+    scrollView.bounces = NO;
+    scrollView.showsHorizontalScrollIndicator = NO;
+    scrollView.showsVerticalScrollIndicator = NO;
     [self addSubview:scrollView];
     
     UIButton * menuBtn = [[UIButton alloc] init];
+    menuBtn.backgroundColor = [UIColor redColor];
     self.menuBtn = menuBtn;
-//    menuBtn.backgroundColor = [UIColor yellowColor];
     [self addSubview:menuBtn];
     
     UIView * lineV = [[UIView alloc] init];
@@ -55,33 +53,34 @@
 }
 
 
--(void)layoutSubviews
+- (void)layoutSubviews
 {
     [super layoutSubviews];
     
-    self.scrollView.frame = CGRectMake(0, 0, MAINSCREEN_WIDTH - 2* Mergin, self.height);
-    NSLog(@"%f",self.scrollView.frame.size.height);
-    self.menuBtn.frame = CGRectMake(self.scrollView.frame.size.width, 0, 2*Mergin, self.height);
+    self.scrollView.frame = CGRectMake(0, 0, MAINSCREEN_WIDTH - 2*Mergin, 30);
+    self.menuBtn.frame = CGRectMake(MAINSCREEN_WIDTH - 2*Mergin, 0, 2*Mergin, 30);
     self.lineV.frame = CGRectMake(0, CGRectGetMaxY(self.menuBtn.frame)-0.5, MAINSCREEN_WIDTH, 0.5);
 
+    static NSInteger i = 0;
+    for (UIButton *itemBtn in self.scrollView.subviews)
+    {
+        itemBtn.frame = CGRectMake(i*2*Mergin, 0, 2*Mergin, 30);
+        i++;
+    }
+    self.scrollView.contentSize = CGSizeMake(self.scrollView.subviews.count*2*Mergin, 0);
 }
 
--(void)setItemAry:(NSArray *)itemAry
+- (void)setItemAry:(NSArray *)itemAry
 {
     _itemAry = itemAry;
-    self.scrollView.backgroundColor = [UIColor redColor];
-    self.scrollView.contentSize = CGSizeMake(itemAry.count*2*Mergin, self.height);
-    NSLog(@"%f %F",self.scrollView.contentSize.width,self.scrollView.contentSize.height);
-    static NSInteger i;
+    
     for (NSString * item in itemAry)
     {
         UIButton * itemBtn = [[UIButton alloc] init];
-        itemBtn.frame = CGRectMake(i* 2*Mergin, 0, 2*Mergin, self.height);
         [itemBtn setTitle:item forState:UIControlStateNormal];
         [itemBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         itemBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         [self.scrollView addSubview:itemBtn];
-        i++;
     }
 }
 
