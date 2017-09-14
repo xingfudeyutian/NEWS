@@ -13,6 +13,7 @@
 
 @property (nonatomic, weak) UIScrollView * scrollView;
 @property (nonatomic, weak) UIButton * menuBtn;
+@property (nonatomic, weak) UIView * lineV;
 
 @end
 
@@ -34,22 +35,54 @@
 {
     UIScrollView * scrollView = [[UIScrollView alloc] init];
     self.scrollView = scrollView;
-    scrollView.backgroundColor = [UIColor greenColor];
+    scrollView.alwaysBounceVertical = YES;
+    scrollView.alwaysBounceHorizontal = YES;
+    scrollView.showsVerticalScrollIndicator = YES;
+    scrollView.showsHorizontalScrollIndicator = YES;
+//    scrollView.backgroundColor = [UIColor greenColor];
     [self addSubview:scrollView];
     
     UIButton * menuBtn = [[UIButton alloc] init];
     self.menuBtn = menuBtn;
-    menuBtn.backgroundColor = [UIColor yellowColor];
+//    menuBtn.backgroundColor = [UIColor yellowColor];
     [self addSubview:menuBtn];
     
-    
+    UIView * lineV = [[UIView alloc] init];
+    self.lineV = lineV;
+    lineV.backgroundColor = [UIColor lightGrayColor];
+    [self addSubview:lineV];
+
 }
+
 
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    self.scrollView.frame = CGRectMake(0, 0, 300, 44);
-    self.menuBtn.frame = CGRectMake(self.scrollView.frame.size.width, 0, 44, 44);
+    
+    self.scrollView.frame = CGRectMake(0, 0, MAINSCREEN_WIDTH - 2* Mergin, self.height);
+    NSLog(@"%f",self.scrollView.frame.size.height);
+    self.menuBtn.frame = CGRectMake(self.scrollView.frame.size.width, 0, 2*Mergin, self.height);
+    self.lineV.frame = CGRectMake(0, CGRectGetMaxY(self.menuBtn.frame)-0.5, MAINSCREEN_WIDTH, 0.5);
+
+}
+
+-(void)setItemAry:(NSArray *)itemAry
+{
+    _itemAry = itemAry;
+    self.scrollView.backgroundColor = [UIColor redColor];
+    self.scrollView.contentSize = CGSizeMake(itemAry.count*2*Mergin, self.height);
+    NSLog(@"%f %F",self.scrollView.contentSize.width,self.scrollView.contentSize.height);
+    static NSInteger i;
+    for (NSString * item in itemAry)
+    {
+        UIButton * itemBtn = [[UIButton alloc] init];
+        itemBtn.frame = CGRectMake(i* 2*Mergin, 0, 2*Mergin, self.height);
+        [itemBtn setTitle:item forState:UIControlStateNormal];
+        [itemBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        itemBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+        [self.scrollView addSubview:itemBtn];
+        i++;
+    }
 }
 
 
