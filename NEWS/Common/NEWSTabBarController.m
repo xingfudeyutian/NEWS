@@ -7,13 +7,13 @@
 //
 
 #import "NEWSTabBarController.h"
-
+#import "NEWSTabBar.h"
 #import "NEWSMeViewController.h"
 #import "NEWSMicroViewController.h"
 #import "NEWSVideoViewController.h"
 #import "NEWSHomeViewController.h"
 
-@interface NEWSTabBarController ()
+@interface NEWSTabBarController ()<NEWSTabBarDelegate>
 
 @end
 
@@ -22,6 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NEWSTabBar * tabBar = [[NEWSTabBar alloc] init];
+    tabBar.tabBarDelegate = self;
+    [self setValue:tabBar forKey:@"tabBar"];
+
     
     
     [self addChildViewControllers];
@@ -43,7 +47,7 @@
     NEWSMicroViewController * microVC = [[NEWSMicroViewController alloc] init];
     UINavigationController *microN = [[UINavigationController alloc] initWithRootViewController:microVC];
     microVC.view.backgroundColor = [UIColor whiteColor];
-    [self setupOneChildViewController:microN Title:@"微头条" normalImg:[[UIImage imageNamed:@"weitoutiao_tabbar"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selImg:[[UIImage imageNamed:@"weitoutiao_tabbar_press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    [self setupOneChildViewController:microN Title:@"小视频" normalImg:[[UIImage imageNamed:@"huoshan_tabbar"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selImg:[[UIImage imageNamed:@"huoshan_tabbar_press"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     /** 我的 */
     NEWSMeViewController * meVC = [[NEWSMeViewController alloc] init];
     meVC.view.backgroundColor = [UIColor whiteColor];
@@ -69,7 +73,12 @@
     childVc.tabBarItem.selectedImage = selImg;
 }
 
+#pragma mark - NEWSTabBarDelegate
 
+-(void)tabBarDidClickPlusButton:(NEWSTabBar *)tabBar
+{
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

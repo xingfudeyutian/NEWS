@@ -17,6 +17,8 @@
 #define MAINSCREEN_WIDTH  MAINSCREEN_FRAME.size.width
 //设备屏幕高
 #define MAINSCREEN_HEIGHT MAINSCREEN_FRAME.size.height
+#define NavBarHeight 64
+#define TabBarHeight 49
 
 //通用间距
 

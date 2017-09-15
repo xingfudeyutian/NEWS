@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		81AD619DEDB4B41F9CBF1744 /* libPods-NEWS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A34FF80E56859C43FD509F24 /* libPods-NEWS.a */; };
+		B5095BE61F6B6EB7002169D2 /* NEWSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B5095BE51F6B6EB7002169D2 /* NEWSTabBar.m */; };
+		B5095BEA1F6BB1AC002169D2 /* NEWSMicroVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5095BE91F6BB1AC002169D2 /* NEWSMicroVideoCell.m */; };
+		B5095BEE1F6BBA6F002169D2 /* NEWSVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5095BED1F6BBA6F002169D2 /* NEWSVideoCell.m */; };
 		B51FA4ED1F6910BC00A49E37 /* NEWSScrollTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */; };
 		B56747361F6789C5008BC8B2 /* NEWSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56747351F6789C5008BC8B2 /* NEWSTabBarController.m */; };
 		B567473D1F67B6D0008BC8B2 /* NEWSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B567473C1F67B6D0008BC8B2 /* NEWSMeViewController.m */; };
@@ -43,6 +46,12 @@
 /* Begin PBXFileReference section */
 		5D4EA99E3EE86CB13BFD356A /* Pods-NEWS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEWS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NEWS/Pods-NEWS.debug.xcconfig"; sourceTree = "<group>"; };
 		A34FF80E56859C43FD509F24 /* libPods-NEWS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NEWS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5095BE41F6B6EB7002169D2 /* NEWSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSTabBar.h; sourceTree = "<group>"; };
+		B5095BE51F6B6EB7002169D2 /* NEWSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSTabBar.m; sourceTree = "<group>"; };
+		B5095BE81F6BB1AC002169D2 /* NEWSMicroVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSMicroVideoCell.h; sourceTree = "<group>"; };
+		B5095BE91F6BB1AC002169D2 /* NEWSMicroVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSMicroVideoCell.m; sourceTree = "<group>"; };
+		B5095BEC1F6BBA6F002169D2 /* NEWSVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSVideoCell.h; sourceTree = "<group>"; };
+		B5095BED1F6BBA6F002169D2 /* NEWSVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSVideoCell.m; sourceTree = "<group>"; };
 		B51FA4EB1F6910BC00A49E37 /* NEWSScrollTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSScrollTool.h; sourceTree = "<group>"; };
 		B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSScrollTool.m; sourceTree = "<group>"; };
 		B52267A61F6A22DF00702E97 /* NEWS-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NEWS-PrefixHeader.pch"; sourceTree = "<group>"; };
@@ -117,11 +126,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B5095BE71F6BB184002169D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5095BE81F6BB1AC002169D2 /* NEWSMicroVideoCell.h */,
+				B5095BE91F6BB1AC002169D2 /* NEWSMicroVideoCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5095BEB1F6BBA58002169D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5095BEC1F6BBA6F002169D2 /* NEWSVideoCell.h */,
+				B5095BED1F6BBA6F002169D2 /* NEWSVideoCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B51FA4EA1F69109A00A49E37 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				B51FA4EB1F6910BC00A49E37 /* NEWSScrollTool.h */,
 				B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */,
+				B5095BE41F6B6EB7002169D2 /* NEWSTabBar.h */,
+				B5095BE51F6B6EB7002169D2 /* NEWSTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +178,7 @@
 		B56747381F67B6B0008BC8B2 /* Micro */ = {
 			isa = PBXGroup;
 			children = (
+				B5095BE71F6BB184002169D2 /* View */,
 				B567473E1F67B6E5008BC8B2 /* NEWSMicroViewController.h */,
 				B567473F1F67B6E5008BC8B2 /* NEWSMicroViewController.m */,
 			);
@@ -158,6 +188,7 @@
 		B56747391F67B6B0008BC8B2 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				B5095BEB1F6BBA58002169D2 /* View */,
 				B56747411F67B6F4008BC8B2 /* NEWSVideoViewController.h */,
 				B56747421F67B6F4008BC8B2 /* NEWSVideoViewController.m */,
 			);
@@ -433,10 +464,13 @@
 				B56747361F6789C5008BC8B2 /* NEWSTabBarController.m in Sources */,
 				B56747461F67B704008BC8B2 /* NEWSHomeViewController.m in Sources */,
 				B56747401F67B6E5008BC8B2 /* NEWSMicroViewController.m in Sources */,
+				B5095BEE1F6BBA6F002169D2 /* NEWSVideoCell.m in Sources */,
 				B59123E61F6278DC004EFFE8 /* main.m in Sources */,
 				B51FA4ED1F6910BC00A49E37 /* NEWSScrollTool.m in Sources */,
+				B5095BE61F6B6EB7002169D2 /* NEWSTabBar.m in Sources */,
 				B567473D1F67B6D0008BC8B2 /* NEWSMeViewController.m in Sources */,
 				B56747431F67B6F4008BC8B2 /* NEWSVideoViewController.m in Sources */,
+				B5095BEA1F6BB1AC002169D2 /* NEWSMicroVideoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

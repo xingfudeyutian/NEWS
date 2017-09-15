@@ -35,15 +35,17 @@
 {
     UIScrollView * scrollView = [[UIScrollView alloc] init];
     self.scrollView = scrollView;
-    scrollView.alwaysBounceVertical = YES;
-    scrollView.alwaysBounceHorizontal = YES;
-    scrollView.showsVerticalScrollIndicator = YES;
-    scrollView.showsHorizontalScrollIndicator = YES;
+    scrollView.alwaysBounceVertical = NO;
+    scrollView.alwaysBounceHorizontal = NO;
+    scrollView.showsVerticalScrollIndicator = NO;
+    scrollView.showsHorizontalScrollIndicator = NO;
 //    scrollView.backgroundColor = [UIColor greenColor];
     [self addSubview:scrollView];
     
     UIButton * menuBtn = [[UIButton alloc] init];
     self.menuBtn = menuBtn;
+    menuBtn.imageView.contentMode = UIViewContentModeScaleToFill;
+    [menuBtn setBackgroundImage:[UIImage imageNamed:@"add_channel_titlbar_follow"] forState:UIControlStateNormal];
 //    menuBtn.backgroundColor = [UIColor yellowColor];
     [self addSubview:menuBtn];
     
@@ -61,7 +63,7 @@
     
     self.scrollView.frame = CGRectMake(0, 0, MAINSCREEN_WIDTH - 2* Mergin, self.height);
     NSLog(@"%f",self.scrollView.frame.size.height);
-    self.menuBtn.frame = CGRectMake(self.scrollView.frame.size.width, 0, 2*Mergin, self.height);
+    self.menuBtn.frame = CGRectMake(self.scrollView.frame.size.width, 0, self.height, self.height);
     self.lineV.frame = CGRectMake(0, CGRectGetMaxY(self.menuBtn.frame)-0.5, MAINSCREEN_WIDTH, 0.5);
 
 }
@@ -69,17 +71,17 @@
 -(void)setItemAry:(NSArray *)itemAry
 {
     _itemAry = itemAry;
-    self.scrollView.backgroundColor = [UIColor redColor];
+
     self.scrollView.contentSize = CGSizeMake(itemAry.count*2*Mergin, self.height);
     NSLog(@"%f %F",self.scrollView.contentSize.width,self.scrollView.contentSize.height);
-    static NSInteger i;
+    int i = 0;
     for (NSString * item in itemAry)
     {
         UIButton * itemBtn = [[UIButton alloc] init];
         itemBtn.frame = CGRectMake(i* 2*Mergin, 0, 2*Mergin, self.height);
         [itemBtn setTitle:item forState:UIControlStateNormal];
         [itemBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        itemBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+        itemBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         [self.scrollView addSubview:itemBtn];
         i++;
     }
