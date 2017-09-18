@@ -33,7 +33,6 @@
     scroll.itemAry = @[@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技"];
     [self.navigationController.navigationBar addSubview:scroll];
     
-    
     //布局
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.itemSize = CGSizeMake(MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT/3);

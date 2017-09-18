@@ -11,6 +11,7 @@
 		B5095BE61F6B6EB7002169D2 /* NEWSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B5095BE51F6B6EB7002169D2 /* NEWSTabBar.m */; };
 		B5095BEA1F6BB1AC002169D2 /* NEWSMicroVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5095BE91F6BB1AC002169D2 /* NEWSMicroVideoCell.m */; };
 		B5095BEE1F6BBA6F002169D2 /* NEWSVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5095BED1F6BBA6F002169D2 /* NEWSVideoCell.m */; };
+		B5095BF11F6BCFC6002169D2 /* NEWSAddView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5095BF01F6BCFC6002169D2 /* NEWSAddView.m */; };
 		B51FA4ED1F6910BC00A49E37 /* NEWSScrollTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */; };
 		B56747361F6789C5008BC8B2 /* NEWSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56747351F6789C5008BC8B2 /* NEWSTabBarController.m */; };
 		B567473D1F67B6D0008BC8B2 /* NEWSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B567473C1F67B6D0008BC8B2 /* NEWSMeViewController.m */; };
@@ -52,6 +53,8 @@
 		B5095BE91F6BB1AC002169D2 /* NEWSMicroVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSMicroVideoCell.m; sourceTree = "<group>"; };
 		B5095BEC1F6BBA6F002169D2 /* NEWSVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSVideoCell.h; sourceTree = "<group>"; };
 		B5095BED1F6BBA6F002169D2 /* NEWSVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSVideoCell.m; sourceTree = "<group>"; };
+		B5095BEF1F6BCFC6002169D2 /* NEWSAddView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSAddView.h; sourceTree = "<group>"; };
+		B5095BF01F6BCFC6002169D2 /* NEWSAddView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSAddView.m; sourceTree = "<group>"; };
 		B51FA4EB1F6910BC00A49E37 /* NEWSScrollTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSScrollTool.h; sourceTree = "<group>"; };
 		B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSScrollTool.m; sourceTree = "<group>"; };
 		B52267A61F6A22DF00702E97 /* NEWS-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NEWS-PrefixHeader.pch"; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */,
 				B5095BE41F6B6EB7002169D2 /* NEWSTabBar.h */,
 				B5095BE51F6B6EB7002169D2 /* NEWSTabBar.m */,
+				B5095BEF1F6BCFC6002169D2 /* NEWSAddView.h */,
+				B5095BF01F6BCFC6002169D2 /* NEWSAddView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -461,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59123E91F6278DC004EFFE8 /* AppDelegate.m in Sources */,
+				B5095BF11F6BCFC6002169D2 /* NEWSAddView.m in Sources */,
 				B56747361F6789C5008BC8B2 /* NEWSTabBarController.m in Sources */,
 				B56747461F67B704008BC8B2 /* NEWSHomeViewController.m in Sources */,
 				B56747401F67B6E5008BC8B2 /* NEWSMicroViewController.m in Sources */,

@@ -13,6 +13,8 @@
 #import "NEWSVideoViewController.h"
 #import "NEWSHomeViewController.h"
 
+#import "NEWSAddView.h"
+
 @interface NEWSTabBarController ()<NEWSTabBarDelegate>
 
 @end
@@ -77,6 +79,9 @@
 
 -(void)tabBarDidClickPlusButton:(NEWSTabBar *)tabBar
 {
+    
+    NEWSAddView * addView = [[NEWSAddView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT)];
+    [[UIApplication sharedApplication].keyWindow addSubview:addView];
     
 }
 
