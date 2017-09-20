@@ -69,7 +69,7 @@
 		B56747421F67B6F4008BC8B2 /* NEWSVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSVideoViewController.m; sourceTree = "<group>"; };
 		B56747441F67B704008BC8B2 /* NEWSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSHomeViewController.h; sourceTree = "<group>"; };
 		B56747451F67B704008BC8B2 /* NEWSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSHomeViewController.m; sourceTree = "<group>"; };
-		B59123E11F6278DC004EFFE8 /* 今日头条.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "今日头条.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59123E11F6278DC004EFFE8 /* 仿-今日头条.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "仿-今日头条.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59123E51F6278DC004EFFE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B59123E71F6278DC004EFFE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B59123E81F6278DC004EFFE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 		B59123E21F6278DC004EFFE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B59123E11F6278DC004EFFE8 /* 今日头条.app */,
+				B59123E11F6278DC004EFFE8 /* 仿-今日头条.app */,
 				B59123FA1F6278DD004EFFE8 /* NEWSTests.xctest */,
 				B59124051F6278DD004EFFE8 /* NEWSUITests.xctest */,
 			);
@@ -297,7 +297,7 @@
 			);
 			name = NEWS;
 			productName = NEWS;
-			productReference = B59123E11F6278DC004EFFE8 /* 今日头条.app */;
+			productReference = B59123E11F6278DC004EFFE8 /* 仿-今日头条.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B59123F91F6278DD004EFFE8 /* NEWSTests */ = {
@@ -348,7 +348,7 @@
 				TargetAttributes = {
 					B59123E01F6278DC004EFFE8 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 924VA47ZK6;
+						DevelopmentTeam = 3RNRBZPDHP;
 						ProvisioningStyle = Automatic;
 					};
 					B59123F91F6278DD004EFFE8 = {
@@ -629,12 +629,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 924VA47ZK6;
+				DEVELOPMENT_TEAM = 3RNRBZPDHP;
 				GCC_PREFIX_HEADER = "NEWS/NEWS-PrefixHeader.pch";
 				INFOPLIST_FILE = NEWS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xztz.xxx.NEWS;
-				PRODUCT_NAME = "今日头条";
+				PRODUCT_NAME = "仿-今日头条";
 			};
 			name = Debug;
 		};
@@ -644,12 +644,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 924VA47ZK6;
+				DEVELOPMENT_TEAM = 3RNRBZPDHP;
 				GCC_PREFIX_HEADER = "NEWS/NEWS-PrefixHeader.pch";
 				INFOPLIST_FILE = NEWS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xztz.xxx.NEWS;
-				PRODUCT_NAME = "今日头条";
+				PRODUCT_NAME = "仿-今日头条";
 			};
 			name = Release;
 		};

@@ -17,8 +17,4 @@
 #import <MJRefresh.h>
 #import <MBProgressHUD.h>
 
-
-
-
-
 #endif /* NEWS_PrefixHeader_pch */

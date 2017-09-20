@@ -24,7 +24,6 @@
 
 }
 
-
 - (void)setupSubViews
 {
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -36,14 +35,14 @@
     //布局
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.itemSize = CGSizeMake(MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT/3);
-    flowLayout.minimumLineSpacing = 1;
+    flowLayout.minimumLineSpacing = 5;
     flowLayout.minimumInteritemSpacing = 0;
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     
     //视图
-    UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, self.view.bounds.size.height-TabBarHeight) collectionViewLayout:flowLayout];
+    UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, self.view.bounds.size.height-TabBarHeight-NavBarHeight) collectionViewLayout:flowLayout];
     self.collectionView = collectionView;
-    collectionView.backgroundColor = [UIColor whiteColor];
+    collectionView.backgroundColor = [UIColor lightGrayColor];
     
     collectionView.showsVerticalScrollIndicator = NO;
     collectionView.delegate = self;

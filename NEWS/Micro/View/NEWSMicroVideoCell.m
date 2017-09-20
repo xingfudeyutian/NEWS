@@ -21,7 +21,7 @@
 
 - (void)setupSubViews
 {
-    self.backgroundColor = [UIColor purpleColor];
+    self.backgroundColor = [UIColor lightGrayColor];
 }
 
 @end
