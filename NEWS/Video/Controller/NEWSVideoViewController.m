@@ -10,9 +10,11 @@
 #import "NEWSScrollTool.h"
 #import "NEWSVideoCell.h"
 
+#import "NEWSVideoViewController+NEWSNetWork.h"
+
+
 @interface NEWSVideoViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
-@property (nonatomic, strong) UICollectionView * collectionView;
 
 @end
 
@@ -21,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupSubViews];
-
+    [self getVideoList];
 }
 
 - (void)setupSubViews
@@ -57,7 +59,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return self.videoList.count;
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -71,7 +73,7 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NEWSVideoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CELL" forIndexPath:indexPath];
-    
+    cell.videoListData = self.videoList[indexPath.row];
     return cell;
 }
 
@@ -80,6 +82,14 @@
     [super didReceiveMemoryWarning];
 }
 
+-(NSMutableArray *)videoList
+{
+    if (_videoList == nil)
+    {
+        _videoList = [NSMutableArray array];
+    }
+    return _videoList;
+}
 
 
 @end

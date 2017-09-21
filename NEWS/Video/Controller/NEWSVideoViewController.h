@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NEWSWaterMelonListData.h"
 
 @interface NEWSVideoViewController : UIViewController
+
+@property (nonatomic, strong) UICollectionView * collectionView;
+@property (nonatomic, strong) NSMutableArray * videoList;
 
 @end

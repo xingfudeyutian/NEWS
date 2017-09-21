@@ -12,12 +12,15 @@
 		B5095BEA1F6BB1AC002169D2 /* NEWSMicroVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5095BE91F6BB1AC002169D2 /* NEWSMicroVideoCell.m */; };
 		B5095BEE1F6BBA6F002169D2 /* NEWSVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5095BED1F6BBA6F002169D2 /* NEWSVideoCell.m */; };
 		B5095BF11F6BCFC6002169D2 /* NEWSAddView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5095BF01F6BCFC6002169D2 /* NEWSAddView.m */; };
+		B5193D031F7365AE00B871A5 /* NEWSWaterMelonListData.m in Sources */ = {isa = PBXBuildFile; fileRef = B5193D021F7365AE00B871A5 /* NEWSWaterMelonListData.m */; };
+		B5193D0C1F739A3800B871A5 /* NEWSVideoViewController+NEWSNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = B5193D091F739A3800B871A5 /* NEWSVideoViewController+NEWSNetWork.m */; };
+		B5193D0D1F739A3800B871A5 /* NEWSVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5193D0B1F739A3800B871A5 /* NEWSVideoViewController.m */; };
 		B51FA4ED1F6910BC00A49E37 /* NEWSScrollTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */; };
 		B56747361F6789C5008BC8B2 /* NEWSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56747351F6789C5008BC8B2 /* NEWSTabBarController.m */; };
 		B567473D1F67B6D0008BC8B2 /* NEWSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B567473C1F67B6D0008BC8B2 /* NEWSMeViewController.m */; };
 		B56747401F67B6E5008BC8B2 /* NEWSMicroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B567473F1F67B6E5008BC8B2 /* NEWSMicroViewController.m */; };
-		B56747431F67B6F4008BC8B2 /* NEWSVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56747421F67B6F4008BC8B2 /* NEWSVideoViewController.m */; };
 		B56747461F67B704008BC8B2 /* NEWSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56747451F67B704008BC8B2 /* NEWSHomeViewController.m */; };
+		B57B15EB1F725A690005D8B4 /* NEWSHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B57B15EA1F725A690005D8B4 /* NEWSHttpManager.m */; };
 		B59123E61F6278DC004EFFE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B59123E51F6278DC004EFFE8 /* main.m */; };
 		B59123E91F6278DC004EFFE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B59123E81F6278DC004EFFE8 /* AppDelegate.m */; };
 		B59123EF1F6278DC004EFFE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59123ED1F6278DC004EFFE8 /* Main.storyboard */; };
@@ -55,6 +58,12 @@
 		B5095BED1F6BBA6F002169D2 /* NEWSVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSVideoCell.m; sourceTree = "<group>"; };
 		B5095BEF1F6BCFC6002169D2 /* NEWSAddView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSAddView.h; sourceTree = "<group>"; };
 		B5095BF01F6BCFC6002169D2 /* NEWSAddView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSAddView.m; sourceTree = "<group>"; };
+		B5193D011F7365AE00B871A5 /* NEWSWaterMelonListData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSWaterMelonListData.h; sourceTree = "<group>"; };
+		B5193D021F7365AE00B871A5 /* NEWSWaterMelonListData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSWaterMelonListData.m; sourceTree = "<group>"; };
+		B5193D081F739A3800B871A5 /* NEWSVideoViewController+NEWSNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NEWSVideoViewController+NEWSNetWork.h"; sourceTree = "<group>"; };
+		B5193D091F739A3800B871A5 /* NEWSVideoViewController+NEWSNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NEWSVideoViewController+NEWSNetWork.m"; sourceTree = "<group>"; };
+		B5193D0A1F739A3800B871A5 /* NEWSVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSVideoViewController.h; sourceTree = "<group>"; };
+		B5193D0B1F739A3800B871A5 /* NEWSVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSVideoViewController.m; sourceTree = "<group>"; };
 		B51FA4EB1F6910BC00A49E37 /* NEWSScrollTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSScrollTool.h; sourceTree = "<group>"; };
 		B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSScrollTool.m; sourceTree = "<group>"; };
 		B52267A61F6A22DF00702E97 /* NEWS-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NEWS-PrefixHeader.pch"; sourceTree = "<group>"; };
@@ -65,10 +74,11 @@
 		B567473C1F67B6D0008BC8B2 /* NEWSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSMeViewController.m; sourceTree = "<group>"; };
 		B567473E1F67B6E5008BC8B2 /* NEWSMicroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSMicroViewController.h; sourceTree = "<group>"; };
 		B567473F1F67B6E5008BC8B2 /* NEWSMicroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSMicroViewController.m; sourceTree = "<group>"; };
-		B56747411F67B6F4008BC8B2 /* NEWSVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSVideoViewController.h; sourceTree = "<group>"; };
-		B56747421F67B6F4008BC8B2 /* NEWSVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSVideoViewController.m; sourceTree = "<group>"; };
 		B56747441F67B704008BC8B2 /* NEWSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSHomeViewController.h; sourceTree = "<group>"; };
 		B56747451F67B704008BC8B2 /* NEWSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSHomeViewController.m; sourceTree = "<group>"; };
+		B57B15E91F725A690005D8B4 /* NEWSHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSHttpManager.h; sourceTree = "<group>"; };
+		B57B15EA1F725A690005D8B4 /* NEWSHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSHttpManager.m; sourceTree = "<group>"; };
+		B57B15EC1F725AB50005D8B4 /* NEWSHttpLinks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NEWSHttpLinks.h; sourceTree = "<group>"; };
 		B59123E11F6278DC004EFFE8 /* 仿-今日头条.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "仿-今日头条.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59123E51F6278DC004EFFE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B59123E71F6278DC004EFFE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +157,26 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B5193D001F73657E00B871A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5193D011F7365AE00B871A5 /* NEWSWaterMelonListData.h */,
+				B5193D021F7365AE00B871A5 /* NEWSWaterMelonListData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5193D071F739A3700B871A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5193D0A1F739A3800B871A5 /* NEWSVideoViewController.h */,
+				B5193D0B1F739A3800B871A5 /* NEWSVideoViewController.m */,
+				B5193D081F739A3800B871A5 /* NEWSVideoViewController+NEWSNetWork.h */,
+				B5193D091F739A3800B871A5 /* NEWSVideoViewController+NEWSNetWork.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		B51FA4EA1F69109A00A49E37 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +194,9 @@
 			isa = PBXGroup;
 			children = (
 				B51FA4EA1F69109A00A49E37 /* View */,
+				B57B15EC1F725AB50005D8B4 /* NEWSHttpLinks.h */,
+				B57B15E91F725A690005D8B4 /* NEWSHttpManager.h */,
+				B57B15EA1F725A690005D8B4 /* NEWSHttpManager.m */,
 				B56747341F6789C5008BC8B2 /* NEWSTabBarController.h */,
 				B56747351F6789C5008BC8B2 /* NEWSTabBarController.m */,
 				B52267A71F6A2D7F00702E97 /* NEWSDefines.h */,
@@ -193,9 +226,9 @@
 		B56747391F67B6B0008BC8B2 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				B5193D071F739A3700B871A5 /* Controller */,
+				B5193D001F73657E00B871A5 /* Model */,
 				B5095BEB1F6BBA58002169D2 /* View */,
-				B56747411F67B6F4008BC8B2 /* NEWSVideoViewController.h */,
-				B56747421F67B6F4008BC8B2 /* NEWSVideoViewController.m */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -466,17 +499,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59123E91F6278DC004EFFE8 /* AppDelegate.m in Sources */,
+				B5193D0C1F739A3800B871A5 /* NEWSVideoViewController+NEWSNetWork.m in Sources */,
 				B5095BF11F6BCFC6002169D2 /* NEWSAddView.m in Sources */,
 				B56747361F6789C5008BC8B2 /* NEWSTabBarController.m in Sources */,
 				B56747461F67B704008BC8B2 /* NEWSHomeViewController.m in Sources */,
 				B56747401F67B6E5008BC8B2 /* NEWSMicroViewController.m in Sources */,
+				B57B15EB1F725A690005D8B4 /* NEWSHttpManager.m in Sources */,
 				B5095BEE1F6BBA6F002169D2 /* NEWSVideoCell.m in Sources */,
 				B59123E61F6278DC004EFFE8 /* main.m in Sources */,
+				B5193D031F7365AE00B871A5 /* NEWSWaterMelonListData.m in Sources */,
 				B51FA4ED1F6910BC00A49E37 /* NEWSScrollTool.m in Sources */,
 				B5095BE61F6B6EB7002169D2 /* NEWSTabBar.m in Sources */,
 				B567473D1F67B6D0008BC8B2 /* NEWSMeViewController.m in Sources */,
-				B56747431F67B6F4008BC8B2 /* NEWSVideoViewController.m in Sources */,
 				B5095BEA1F6BB1AC002169D2 /* NEWSMicroVideoCell.m in Sources */,
+				B5193D0D1F739A3800B871A5 /* NEWSVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

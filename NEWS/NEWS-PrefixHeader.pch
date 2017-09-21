@@ -11,6 +11,9 @@
 
 
 #import "NEWSDefines.h"
+#import "NEWSHttpManager.h"
+#import "NEWSHttpLinks.h"
+
 #import <Masonry.h>
 #import <AFNetworking.h>
 #import <YYKit.h>

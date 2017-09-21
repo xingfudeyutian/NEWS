@@ -56,6 +56,7 @@
     
     self.titleL = [[UILabel alloc] init];
     self.titleL.text = @"街上被雷劈出一个黑洞，里面爬出巨型怪物，场面一度混乱失控";
+    self.titleL.textColor = [UIColor whiteColor];
     self.titleL.numberOfLines = 2;
     self.titleL.font = [UIFont systemFontOfSize:14];
     [self.contentView addSubview:self.titleL];
@@ -63,12 +64,14 @@
     self.countL = [[UILabel alloc] init];
     self.countL.text = @"16万次播放";
     [self.countL sizeToFit];
+    self.countL.textColor = [UIColor whiteColor];
     self.countL.font = [UIFont systemFontOfSize:10];
     [self.contentView addSubview:self.countL];
     
     self.timeL = [[UILabel alloc] init];
     self.timeL.font = [UIFont systemFontOfSize:10];
     self.timeL.text = @"04:34";
+    self.timeL.textColor = [UIColor whiteColor];
     [self.contentView addSubview:self.timeL];
 
     
@@ -136,7 +139,8 @@
     }];
     
     [self.titleL mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.equalTo(self.contentView).offset(Mergin);
+        make.top.equalTo(self.contentView).offset(Mergin/2);
+        make.left.equalTo(self.contentView).offset(Mergin);
         make.right.equalTo(self.contentView).offset(-Mergin);
         make.height.mas_equalTo(2*Mergin);
     }];
@@ -184,6 +188,17 @@
     }];
 }
 
-
+-(void)setVideoListData:(NEWSWaterMelonListData *)videoListData
+{
+    _videoListData = videoListData;
+    
+    self.titleL.text = videoListData.title;
+    [self.bgImageV setImageWithURL:[NSURL URLWithString:videoListData.video_detail_info.detail_video_large_image.video_url] placeholder:[UIImage imageNamed:@"wallpaper_profile"]];
+    [self.avaterBtn.imageView setImageWithURL:[NSURL URLWithString:videoListData.user_info.avatar_url] placeholder:nil];
+    [self.avaterBtn setTitle:videoListData.user_info.name forState:UIControlStateNormal];
+    
+    
+    
+}
 
 @end

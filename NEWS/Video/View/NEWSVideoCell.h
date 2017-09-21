@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NEWSWaterMelonListData.h"
 
 @interface NEWSVideoCell : UICollectionViewCell
+
+@property (nonatomic, strong) NEWSWaterMelonListData * videoListData;
 
 @end
