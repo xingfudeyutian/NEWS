@@ -45,11 +45,11 @@
 {
     [super layoutSubviews];
     
-    self.plusBtn.size = CGSizeMake(self.height, self.height);
-    self.plusBtn.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2-5.0);
+    self.plusBtn.size = CGSizeMake(49, 49);
+    self.plusBtn.center = CGPointMake(self.frame.size.width/2, 49/2-5.0);
     self.plusBtn.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.plusBtn.layer.borderWidth = 0.5;
-    self.plusBtn.layer.cornerRadius = self.height/2;
+    self.plusBtn.layer.cornerRadius = 49/2;
     
     CGFloat tabbarButtonW = self.frame.size.width / 5;
     CGFloat tabbarButtonIndex = 0;

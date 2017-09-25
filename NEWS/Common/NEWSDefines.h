@@ -10,6 +10,7 @@
 #define NEWSDefines_h
 
 
+#define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
 //设备屏幕大小
 #define MAINSCREEN_FRAME   [[UIScreen mainScreen] bounds]
@@ -17,12 +18,14 @@
 #define MAINSCREEN_WIDTH  MAINSCREEN_FRAME.size.width
 //设备屏幕高
 #define MAINSCREEN_HEIGHT MAINSCREEN_FRAME.size.height
-#define NavBarHeight 64
-#define TabBarHeight 49
+
+#define NavBarHeight (kDevice_Is_iPhoneX? 88 : 64)
+#define TabBarHeight (kDevice_Is_iPhoneX ? 83 : 49)
 
 //通用间距
 
 #define Mergin   20
+
 
 
 

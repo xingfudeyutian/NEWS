@@ -42,7 +42,9 @@
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     
     //视图
-    UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, self.view.bounds.size.height-TabBarHeight-NavBarHeight) collectionViewLayout:flowLayout];
+    NSLog(@"MAINSCREEN_HEIGHT %f TabBarHeight  %d  %f",MAINSCREEN_HEIGHT ,TabBarHeight,MAINSCREEN_HEIGHT - 83);
+
+    UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, MAINSCREEN_HEIGHT-TabBarHeight) collectionViewLayout:flowLayout];
     self.collectionView = collectionView;
     collectionView.backgroundColor = [UIColor lightGrayColor];
     
@@ -52,7 +54,6 @@
     [collectionView registerClass:[NEWSVideoCell class] forCellWithReuseIdentifier:@"CELL"];
     
     [self.view addSubview:collectionView];
-    
 }
 
 #pragma mark - UICollectionViewDelegate,UICollectionViewDataSource
