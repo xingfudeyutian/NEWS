@@ -10,6 +10,26 @@
 
 @implementation NEWSVideoViewController (NEWSNetWork)
 
+
+-(void)getCategoryList
+{
+    [NEWSHttpManager get:CategoryList params:nil success:^(id responseObject) {
+        if ([responseObject[@"message"] isEqualToString:@"success"])
+        {
+            self.categoryList = [NSArray modelArrayWithClass:[NEWSCategoryModel class] json:responseObject[@"data"]];
+            NEWSCategoryModel * model = [[NEWSCategoryModel alloc] init];
+            model.name = @"推荐";
+            NSMutableArray * modelAry = [NSMutableArray array];
+            [modelAry addObject:model];
+            [modelAry addObjectsFromArray:self.categoryList];
+            self.scroll.itemAry = (NSArray *)modelAry;
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
+
 -(void)getVideoList
 {
     [NEWSHttpManager get:WaterMelonVideoList params:nil success:^(id responseObject) {

@@ -10,6 +10,8 @@
 
 @interface NEWSVideoViewController (NEWSNetWork)
 
+
+- (void)getCategoryList;
 - (void)getVideoList;
 
 

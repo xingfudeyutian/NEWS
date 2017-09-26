@@ -20,6 +20,9 @@
 
 @property (nonatomic, strong) UIView * toolBgV;
 @property (nonatomic, strong) UIButton * avaterBtn;
+@property (nonatomic, strong) UIImageView * avater;
+@property (nonatomic, strong) UILabel * auther;
+
 @property (nonatomic, strong) UIButton * followBtn;
 @property (nonatomic, strong) UIButton * commentBtn;
 @property (nonatomic, strong) UIButton * moreBtn;

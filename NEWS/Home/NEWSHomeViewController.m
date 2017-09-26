@@ -30,7 +30,8 @@
     [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault ];
  
     NEWSScrollTool * scroll = [[NEWSScrollTool alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, 30)];
-    scroll.itemAry = @[@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技"];
+//    scroll.itemAry = @[@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技"];
+    scroll.iconImage = @"add_channel_titlbar_follow";
     [self.view addSubview:scroll];
 
 }

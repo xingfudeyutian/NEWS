@@ -7,7 +7,7 @@
 //
 
 #import "NEWSVideoViewController.h"
-#import "NEWSScrollTool.h"
+
 #import "NEWSVideoCell.h"
 
 #import "NEWSVideoViewController+NEWSNetWork.h"
@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupSubViews];
+    [self getCategoryList];
     [self getVideoList];
 }
 
@@ -30,9 +31,10 @@
 {
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationController.navigationBar.translucent = NO;
-    NEWSScrollTool * scroll = [[NEWSScrollTool alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, 44)];
-    scroll.itemAry = @[@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技"];
-    [self.navigationController.navigationBar addSubview:scroll];
+    self.scroll = [[NEWSScrollTool alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, 30)];
+//    self.scroll.itemAry = @[@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技",@"科技"];
+    self.scroll.iconImage = @"Search";
+    [self.navigationController.navigationBar addSubview:self.scroll];
     
     //布局
     UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc] init];
@@ -46,7 +48,7 @@
 
     UICollectionView * collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, MAINSCREEN_HEIGHT-TabBarHeight) collectionViewLayout:flowLayout];
     self.collectionView = collectionView;
-    collectionView.backgroundColor = [UIColor lightGrayColor];
+    collectionView.backgroundColor = [UIColor clearColor];
     
     collectionView.showsVerticalScrollIndicator = NO;
     collectionView.delegate = self;
@@ -91,6 +93,17 @@
     }
     return _videoList;
 }
+
+
+-(NSArray *)categoryList
+{
+    if (_categoryList == nil)
+    {
+        _categoryList = [NSArray array];
+    }
+    return _categoryList;
+}
+
 
 
 @end

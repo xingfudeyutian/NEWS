@@ -7,7 +7,7 @@
 //
 
 #import "NEWSScrollTool.h"
-
+#import "NEWSCategoryModel.h"
 
 @interface NEWSScrollTool ()
 
@@ -44,8 +44,7 @@
     
     UIButton * menuBtn = [[UIButton alloc] init];
     self.menuBtn = menuBtn;
-    menuBtn.imageView.contentMode = UIViewContentModeScaleToFill;
-    [menuBtn setBackgroundImage:[UIImage imageNamed:@"add_channel_titlbar_follow"] forState:UIControlStateNormal];
+    menuBtn.imageView.contentMode = UIViewContentModeScaleAspectFill;
     [self addSubview:menuBtn];
     
     UIView * lineV = [[UIView alloc] init];
@@ -70,18 +69,26 @@
     _itemAry = itemAry;
     self.scrollView.contentSize = CGSizeMake(itemAry.count*2*Mergin, self.height);
     int i = 0;
-    for (NSString * item in itemAry)
+    for (NEWSCategoryModel * itemModel in itemAry)
     {
         UIButton * itemBtn = [[UIButton alloc] init];
-        itemBtn.frame = CGRectMake(i* 2*Mergin, 0, 2*Mergin, self.height);
+        itemBtn.frame = CGRectMake(i* 2*Mergin, 0, 2.5*Mergin, self.height);
         itemBtn.tag = i;
+        
         [itemBtn addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
-        [itemBtn setTitle:item forState:UIControlStateNormal];
+        [itemBtn setTitle:itemModel.name forState:UIControlStateNormal];
         [itemBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        itemBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+        itemBtn.titleLabel.font = [UIFont systemFontOfSize:17];
         [self.scrollView addSubview:itemBtn];
+        if (i == 0)
+        {
+            [itemBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+            itemBtn.titleLabel.font = [UIFont systemFontOfSize:18];
+            self.currentBtn = itemBtn;
+        }
         i++;
     }
+
 }
 
 - (void)itemAction:(UIButton *)itemBtn
@@ -89,14 +96,21 @@
     if (itemBtn.tag != self.currentBtn.tag)
     {
         [itemBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        itemBtn.titleLabel.font = [UIFont systemFontOfSize:17];
+        itemBtn.titleLabel.font = [UIFont systemFontOfSize:18];
         [self.currentBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        self.currentBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+        self.currentBtn.titleLabel.font = [UIFont systemFontOfSize:17];
         
         self.currentBtn = itemBtn;
     }
    
 }
 
+
+-(void)setIconImage:(NSString *)iconImage
+{
+    _iconImage = iconImage;
+//    [UIImage imageNamed:@"add_channel_titlbar_follow"]
+    [self.menuBtn setBackgroundImage:[UIImage imageNamed:iconImage] forState:UIControlStateNormal];
+}
 
 @end

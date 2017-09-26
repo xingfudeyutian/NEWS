@@ -12,6 +12,6 @@
 
 
 @property (nonatomic, strong) NSArray * itemAry;
-
+@property (nonatomic, copy) NSString * iconImage;
 
 @end

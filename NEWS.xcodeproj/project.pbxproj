@@ -16,6 +16,7 @@
 		B5193D0C1F739A3800B871A5 /* NEWSVideoViewController+NEWSNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = B5193D091F739A3800B871A5 /* NEWSVideoViewController+NEWSNetWork.m */; };
 		B5193D0D1F739A3800B871A5 /* NEWSVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5193D0B1F739A3800B871A5 /* NEWSVideoViewController.m */; };
 		B51FA4ED1F6910BC00A49E37 /* NEWSScrollTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */; };
+		B53EE9AA1F78F702000D0F79 /* NEWSCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B53EE9A91F78F702000D0F79 /* NEWSCategoryModel.m */; };
 		B56747361F6789C5008BC8B2 /* NEWSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56747351F6789C5008BC8B2 /* NEWSTabBarController.m */; };
 		B567473D1F67B6D0008BC8B2 /* NEWSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B567473C1F67B6D0008BC8B2 /* NEWSMeViewController.m */; };
 		B56747401F67B6E5008BC8B2 /* NEWSMicroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B567473F1F67B6E5008BC8B2 /* NEWSMicroViewController.m */; };
@@ -68,6 +69,8 @@
 		B51FA4EC1F6910BC00A49E37 /* NEWSScrollTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSScrollTool.m; sourceTree = "<group>"; };
 		B52267A61F6A22DF00702E97 /* NEWS-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NEWS-PrefixHeader.pch"; sourceTree = "<group>"; };
 		B52267A71F6A2D7F00702E97 /* NEWSDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NEWSDefines.h; sourceTree = "<group>"; };
+		B53EE9A81F78F702000D0F79 /* NEWSCategoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NEWSCategoryModel.h; sourceTree = "<group>"; };
+		B53EE9A91F78F702000D0F79 /* NEWSCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NEWSCategoryModel.m; sourceTree = "<group>"; };
 		B56747341F6789C5008BC8B2 /* NEWSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSTabBarController.h; sourceTree = "<group>"; };
 		B56747351F6789C5008BC8B2 /* NEWSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEWSTabBarController.m; sourceTree = "<group>"; };
 		B567473B1F67B6D0008BC8B2 /* NEWSMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEWSMeViewController.h; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 			children = (
 				B5193D011F7365AE00B871A5 /* NEWSWaterMelonListData.h */,
 				B5193D021F7365AE00B871A5 /* NEWSWaterMelonListData.m */,
+				B53EE9A81F78F702000D0F79 /* NEWSCategoryModel.h */,
+				B53EE9A91F78F702000D0F79 /* NEWSCategoryModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -508,6 +513,7 @@
 				B5095BEE1F6BBA6F002169D2 /* NEWSVideoCell.m in Sources */,
 				B59123E61F6278DC004EFFE8 /* main.m in Sources */,
 				B5193D031F7365AE00B871A5 /* NEWSWaterMelonListData.m in Sources */,
+				B53EE9AA1F78F702000D0F79 /* NEWSCategoryModel.m in Sources */,
 				B51FA4ED1F6910BC00A49E37 /* NEWSScrollTool.m in Sources */,
 				B5095BE61F6B6EB7002169D2 /* NEWSTabBar.m in Sources */,
 				B567473D1F67B6D0008BC8B2 /* NEWSMeViewController.m in Sources */,
