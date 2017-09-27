@@ -19,7 +19,7 @@
 @property (nonatomic, strong) UILabel * timeL;
 
 @property (nonatomic, strong) UIView * toolBgV;
-@property (nonatomic, strong) UIButton * avaterBtn;
+//@property (nonatomic, strong) UIButton * avaterBtn;
 @property (nonatomic, strong) UIImageView * avater;
 @property (nonatomic, strong) UILabel * auther;
 
@@ -84,18 +84,32 @@
     
     
     
-    self.avaterBtn = [[UIButton alloc] init];
-    [self.avaterBtn.titleLabel sizeToFit];
-     self.avaterBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    self.avaterBtn.imageView.frame = CGRectMake(0, 0, Mergin, Mergin);
-    self.avaterBtn.imageView.backgroundColor = [UIColor lightGrayColor];
-    self.avaterBtn.imageView.layer.cornerRadius = Mergin;
-    self.avaterBtn.imageView.clipsToBounds = YES;
-    [self.avaterBtn setImage:[UIImage imageNamed:@"comment"] forState:UIControlStateNormal];
-    [self.avaterBtn setTitle:@"谎言小白" forState:UIControlStateNormal];
-    self.avaterBtn.titleLabel.font = [UIFont systemFontOfSize:10];
-    [self.avaterBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.toolBgV addSubview:self.avaterBtn];
+//    self.avaterBtn = [[UIButton alloc] init];
+//    [self.avaterBtn.titleLabel sizeToFit];
+//     self.avaterBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
+//    self.avaterBtn.imageView.frame = CGRectMake(0, 0, Mergin, Mergin);
+//    self.avaterBtn.imageView.backgroundColor = [UIColor lightGrayColor];
+//    self.avaterBtn.imageView.layer.cornerRadius = Mergin;
+//    self.avaterBtn.imageView.clipsToBounds = YES;
+//    [self.avaterBtn setImage:[UIImage imageNamed:@"comment"] forState:UIControlStateNormal];
+//    [self.avaterBtn setTitle:@"谎言小白" forState:UIControlStateNormal];
+//    self.avaterBtn.titleLabel.font = [UIFont systemFontOfSize:10];
+//    [self.avaterBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [self.toolBgV addSubview:self.avaterBtn];
+    
+    
+    self.avater = [[UIImageView alloc] init];
+    self.avater.clipsToBounds = YES;
+    self.avater.layer.cornerRadius = Mergin/2;
+    [self.toolBgV addSubview:self.avater];
+    
+    self.auther = [[UILabel alloc] init];
+    self.auther.font = [UIFont systemFontOfSize:10];
+    self.auther.textColor = [UIColor blackColor];
+    [self.auther sizeToFit];
+    [self.toolBgV addSubview:self.auther];
+    
+    
     
     self.followBtn = [[UIButton alloc] init];
     [self.followBtn setImage:[UIImage imageNamed:@"add_channel_titlbar_follow"] forState:UIControlStateNormal];
@@ -115,9 +129,6 @@
     self.moreBtn = [[UIButton alloc] init];
     [self.moreBtn setImage:[UIImage imageNamed:@"More"] forState:UIControlStateNormal];
     [self.toolBgV addSubview:self.moreBtn];
-    
-    
-
     
 }
 
@@ -165,10 +176,21 @@
         make.width.height.mas_equalTo(2*Mergin);
     }];
     
-    [self.avaterBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//    [self.avaterBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self.toolBgV.mas_left).offset(Mergin);
+//        make.top.bottom.equalTo(self.moreBtn);
+//        make.width.mas_equalTo(3*Mergin);
+//    }];
+    
+    [self.avater mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.toolBgV.mas_left).offset(Mergin);
         make.top.bottom.equalTo(self.moreBtn);
-        make.width.mas_equalTo(3*Mergin);
+        make.width.height.mas_equalTo(Mergin);
+    }];
+    
+    [self.auther mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.avater.mas_right).offset(Mergin);
+        make.top.bottom.equalTo(self.moreBtn);
     }];
     
     [self.moreBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -197,9 +219,8 @@
     
     self.titleL.text = videoListData.title;
     [self.bgImageV setImageWithURL:[NSURL URLWithString:videoListData.video_detail_info.detail_video_large_image.video_url] placeholder:[UIImage imageNamed:@"wallpaper_profile"]];
-    [self.avaterBtn.imageView setImageWithURL:[NSURL URLWithString:videoListData.user_info.avatar_url] placeholder:nil];
-    [self.avaterBtn setTitle:videoListData.user_info.name forState:UIControlStateNormal];
-    
+    [self.avater setImageWithURL:[NSURL URLWithString:videoListData.user_info.avatar_url] placeholder:nil];
+    self.auther.text = videoListData.user_info.name;
     
     
 }

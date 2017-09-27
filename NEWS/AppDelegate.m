@@ -19,8 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    NSLog(@"%f %f",screenBounds.size.width,screenBounds.size.height);
+//    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+//    NSLog(@"%f %f",screenBounds.size.width,screenBounds.size.height);
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     NEWSTabBarController * newsTab = [[NEWSTabBarController alloc] init];
     self.window.rootViewController = newsTab;
