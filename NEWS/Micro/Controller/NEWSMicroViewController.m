@@ -8,7 +8,7 @@
 
 #import "NEWSMicroViewController.h"
 #import "NEWSMicroVideoCell.h"
-
+#import "NEWSMicroViewController+NEWSNetWork.h"
 
 @interface NEWSMicroViewController () <UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -24,6 +24,7 @@
     [self.navigationController.navigationBar setHidden:YES];
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self setupSubViews];
+    [self getMicroList];
 }
 
 - (void)setupSubViews
